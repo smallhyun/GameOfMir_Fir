@@ -1,0 +1,55 @@
+package DelphiX_for7;
+
+{$R *.res}
+{$R 'DelphiX.dcr'}
+{$IFDEF IMPLICITBUILDING This IFDEF should not be used by users}
+{$ALIGN 8}
+{$ASSERTIONS OFF}
+{$BOOLEVAL OFF}
+{$DEBUGINFO OFF}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS OFF}
+{$LOCALSYMBOLS OFF}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION OFF}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO OFF}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES ON}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST ON}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$DEFINE DEBUG}
+{$ENDIF IMPLICITBUILDING}
+{$DESCRIPTION 'DelphiX - DirectX components for Delphi'}
+{$IMPLICITBUILD ON}
+
+requires
+  vcl,
+  designide,
+  Install,
+  VclSmp,
+  MirGame;
+
+contains
+  DXETable in 'DXETable.pas',
+  DXInput in 'DXInput.pas',
+  DXPlay in 'DXPlay.pas',
+  DXPlayFm in 'DXPlayFm.pas',
+  DXReg in 'DXReg.pas',
+  DXSprite in 'DXSprite.pas',
+  DXFFBEdit in 'DXFFBEdit.pas',
+  DXGUIDEdit in 'DXGUIDEdit.pas',
+  DXInptEdit in 'DXInptEdit.pas',
+  DXPictEdit in 'DXPictEdit.pas',
+  DXWaveEdit in 'DXWaveEdit.pas',
+  DAnim in 'DAnim.pas';
+
+//DWinCtl in '..\..\MirClient\DWinCtl.pas';
+
+end.

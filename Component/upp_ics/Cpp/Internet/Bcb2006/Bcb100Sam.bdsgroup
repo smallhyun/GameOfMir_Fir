@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<PersonalityInfo>
+		<Option>
+			<Option Name="Personality">Default.Personality</Option>
+			<Option Name="ProjectType"></Option>
+			<Option Name="Version">1.0</Option>
+			<Option Name="GUID">{4B811124-4BC9-4FD5-B3D7-9599A962DE37}</Option>
+		</Option>
+	</PersonalityInfo>
+	<Default.Personality>  
+    
+    <Projects>
+      <Projects Name="IcsBcb100.bpl">..\..\..\Delphi\VC32\IcsBcb100.bdsproj</Projects>
+      <Projects Name="BasNntp.exe">BasNntp.bdsproj</Projects>
+      <Projects Name="UdpSend.exe">UdpSend.bdsproj</Projects>
+      <Projects Name="UdpLstn.exe">UdpLstn.bdsproj</Projects>
+      <Projects Name="TWSChat.exe">TWSChat.bdsproj</Projects>
+      <Projects Name="TnSrv.exe">TnSrv.bdsproj</Projects>
+      <Projects Name="TnDemo.exe">TnDemo.bdsproj</Projects>
+      <Projects Name="TnClient.exe">TnClient.bdsproj</Projects>
+      <Projects Name="TcpSrv.exe">TcpSrv.bdsproj</Projects>
+      <Projects Name="SrvDemo.exe">SrvDemo.bdsproj</Projects>
+      <Projects Name="SocksTst.exe">SocksTst.bdsproj</Projects>
+      <Projects Name="Server5.exe">Server5.bdsproj</Projects>
+      <Projects Name="Sender.exe">Sender.bdsproj</Projects>
+      <Projects Name="ReverseDnsSync.exe">ReverseDnsSync.bdsproj</Projects>
+      <Projects Name="Recv.exe">Recv.bdsproj</Projects>
+      <Projects Name="PingTst.exe">PingTst.bdsproj</Projects>
+      <Projects Name="NsLookup.exe">NsLookup.bdsproj</Projects>
+      <Projects Name="NewsRdr.exe">NewsRdr.bdsproj</Projects>
+      <Projects Name="MtSrv.exe">MtSrv.bdsproj</Projects>
+      <Projects Name="MailSnd.exe">MailSnd.bdsproj</Projects>
+      <Projects Name="MailRcv.exe">MailRcv.bdsproj</Projects>
+      <Projects Name="IcsDll1.dll">IcsDll1.bdsproj</Projects>
+      <Projects Name="HttpTst.exe">HttpTst.bdsproj</Projects>
+      <Projects Name="HttpPg.exe">HttpPg.bdsproj</Projects>
+      <Projects Name="FtpTst.exe">FtpTst.bdsproj</Projects>
+      <Projects Name="FtpServ.exe">FtpServ.bdsproj</Projects>
+      <Projects Name="Finger.exe">Finger.bdsproj</Projects>
+      <Projects Name="DllTst.exe">DllTst.bdsproj</Projects>
+      <Projects Name="ConCli_2.exe">ConCli_2.bdsproj</Projects>
+      <Projects Name="Client7.exe">Client7.bdsproj</Projects>
+      <Projects Name="Client5.exe">Client5.bdsproj</Projects>
+      <Projects Name="WebServ.exe">WebServ.bdsproj</Projects>
+      <Projects Name="Targets">IcsBcb100.bpl BasNntp.exe UdpSend.exe UdpLstn.exe TWSChat.exe TnSrv.exe TnDemo.exe TnClient.exe TcpSrv.exe SrvDemo.exe SocksTst.exe Server5.exe Sender.exe ReverseDnsSync.exe Recv.exe PingTst.exe NsLookup.exe NewsRdr.exe MtSrv.exe MailSnd.exe MailRcv.exe IcsDll1.dll HttpTst.exe HttpPg.exe FtpTst.exe FtpServ.exe Finger.exe DllTst.exe ConCli_2.exe Client7.exe Client5.exe WebServ.exe</Projects>
+    </Projects>
+    <Dependencies/>
+  </Default.Personality>
+	<StarTeamAssociation></StarTeamAssociation>
+	<StarTeamNonRelativeFiles></StarTeamNonRelativeFiles>
+</BorlandProject>

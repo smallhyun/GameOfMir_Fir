@@ -1,0 +1,24 @@
+身上
+<$USEITEMS[X].INDEX> X表示装备位置(0~12)
+
+<$USEITEMS[0].INDEX> DB库的Idx 字段值
+<$USEITEMS[0].MAKEINDEX> 制造编号
+<$USEITEMS[0].NAME> 名称
+<$USEITEMS[0].DURA> 持久
+<$USEITEMS[0].DURAMAX> 最大持久
+
+OK框
+<$OK.INDEX> DB库的Idx 字段值
+<$OK.MAKEINDEX> 制造编号
+<$OK.NAME> 名称
+<$OK.DURA> 持久
+<$OK.DURAMAX> 最大持久
+
+G A 变量支持到999
+个人变量标志以前的双倍
+
+修改物品名称颜色
+CHANGEITEMCOLOR 颜色(0~255) 位置(0~12 为空时为OK框的物品)
+
+检测物品名称颜色
+CHECKITEMCOLOR 检测符(<,>,=) 颜色(0~255) 位置(0~12 为空时为OK框的物品)

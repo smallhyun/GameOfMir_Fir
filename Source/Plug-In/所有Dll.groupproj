@@ -1,0 +1,72 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{C15265C6-FB71-4D0F-8256-B97914132723}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="M2ServerDLL\M2Server.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="IPLocal\IPLocal.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="PlugOfShop\zPlugOfShop.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="zPlugOfEngine\zPlugOfEngine.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="M2Server">
+        <MSBuild Projects="M2ServerDLL\M2Server.dproj"/>
+    </Target>
+    <Target Name="M2Server:Clean">
+        <MSBuild Projects="M2ServerDLL\M2Server.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="M2Server:Make">
+        <MSBuild Projects="M2ServerDLL\M2Server.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="IPLocal">
+        <MSBuild Projects="IPLocal\IPLocal.dproj"/>
+    </Target>
+    <Target Name="IPLocal:Clean">
+        <MSBuild Projects="IPLocal\IPLocal.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="IPLocal:Make">
+        <MSBuild Projects="IPLocal\IPLocal.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="zPlugOfShop">
+        <MSBuild Projects="PlugOfShop\zPlugOfShop.dproj"/>
+    </Target>
+    <Target Name="zPlugOfShop:Clean">
+        <MSBuild Projects="PlugOfShop\zPlugOfShop.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="zPlugOfShop:Make">
+        <MSBuild Projects="PlugOfShop\zPlugOfShop.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="zPlugOfEngine">
+        <MSBuild Projects="zPlugOfEngine\zPlugOfEngine.dproj"/>
+    </Target>
+    <Target Name="zPlugOfEngine:Clean">
+        <MSBuild Projects="zPlugOfEngine\zPlugOfEngine.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="zPlugOfEngine:Make">
+        <MSBuild Projects="zPlugOfEngine\zPlugOfEngine.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="M2Server;IPLocal;zPlugOfShop;zPlugOfEngine"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="M2Server:Clean;IPLocal:Clean;zPlugOfShop:Clean;zPlugOfEngine:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="M2Server:Make;IPLocal:Make;zPlugOfShop:Make;zPlugOfEngine:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

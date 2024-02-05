@@ -1,0 +1,86 @@
+package IcsDel100;
+
+{$R *.res}
+{$R 'WSocket.dcr'}
+{$R 'EmulVT.dcr'}
+{$R 'FtpCli.dcr'}
+{$R 'FtpSrv.dcr'}
+{$R 'HttpProt.dcr'}
+{$R 'HttpSrv.dcr'}
+{$R 'MimeDec.dcr'}
+{$R 'NntpCli.dcr'}
+{$R 'Pop3Prot.dcr'}
+{$R 'SmtpProt.dcr'}
+{$R 'TnCnx.dcr'}
+{$R 'TnEmulVT.dcr'}
+{$R 'TnScript.dcr'}
+{$R 'WSocketS.dcr'}
+{$R 'WSocketTS.dcr'}
+{$R 'IcsLogger.dcr'}
+{$R 'Ping.dcr'}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO ON}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION ON}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES OFF}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$DESCRIPTION 'ICS (Internet Component Suite) for Delphi 2006'}
+{$IMPLICITBUILD ON}
+
+requires
+  rtl,
+  vcl,
+  designide;
+
+contains
+  WSockBuf in 'WSockBuf.pas',
+  WSocket in 'WSocket.pas',
+  WSocketE in 'WSocketE.pas',
+  EmulVT in 'EmulVT.pas',
+  FtpCli in 'FtpCli.pas',
+  FtpSrv in 'FtpSrv.pas',
+  FtpSrvC in 'FtpSrvC.pas',
+  FtpSrvT in 'FtpSrvT.pas',
+  HttpProt in 'HttpProt.pas',
+  HttpSrv in 'HttpSrv.pas',
+  IcsMD4 in 'IcsMD4.pas',
+  IcsMD5 in 'IcsMD5.pas',
+  IcsSha1 in 'IcsSha1.pas',
+  MimeDec in 'MimeDec.pas',
+  NntpCli in 'NntpCli.pas',
+  Pop3Prot in 'Pop3Prot.pas',
+  SmtpProt in 'SmtpProt.pas',
+  TnCnx in 'TnCnx.pas',
+  TnEmulVT in 'TnEmulVT.pas',
+  TnScript in 'TnScript.pas',
+  WSocketS in 'WSocketS.pas',
+  TnOptFrm in 'TnOptFrm.pas',
+  IcsUrl in 'IcsUrl.pas',
+  IcsNtlmMsgs in 'IcsNtlmMsgs.pas',
+  MimeUtil in 'MimeUtil.pas',
+  IcsDES in 'IcsDES.pas',
+  WSocketTS in 'WSocketTS.pas',
+  HttpContCod in 'HttpContCod.pas',
+  IcsLogger in 'IcsLogger.pas',
+  Ping in 'Ping.pas',
+  Icmp in 'Icmp.pas',
+  IcsZlibHigh in 'IcsZlibHigh.pas',
+  IcsZLibObj in 'IcsZLibObj.pas',
+  IcsStreams in 'IcsStreams.pas';
+
+end.

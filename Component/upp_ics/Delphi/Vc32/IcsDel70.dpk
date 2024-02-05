@@ -1,0 +1,97 @@
+package IcsDel70;
+
+{$R *.res}
+{$R 'WSocket.dcr'}
+{$R 'FingCli.dcr'}
+{$R 'FtpCli.dcr'}
+{$R 'FtpSrv.dcr'}
+{$R 'HttpProt.dcr'}
+{$R 'MimeDec.dcr'}
+{$R 'NntpCli.dcr'}
+{$R 'Ping.dcr'}
+{$R 'Pop3Prot.dcr'}
+{$R 'TnCnx.dcr'}
+{$R 'TnEmulVT.dcr'}
+{$R 'TnScript.dcr'}
+{$R 'EmulVT.dcr'}
+{$R 'SmtpProt.dcr'}
+{$R 'MbxFile.dcr'}
+{$R 'Wait.dcr'}
+{$R 'DnsQuery.dcr'}
+{$R 'WSocketS.dcr'}
+{$R 'HttpSrv.dcr'}
+{$R 'WSocketTS.dcr'}
+{$R 'IcsLogger.dcr'}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO ON}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION OFF}
+{$OVERFLOWCHECKS ON}
+{$RANGECHECKS ON}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES OFF}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST ON}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$DESCRIPTION 'Internet Component Suite (ICS) for Delphi 7'}
+{$IMPLICITBUILD ON}
+{$DEFINE NO_DEBUG_LOG}
+
+requires
+  vcl,
+  rtl,
+  designide;
+
+contains
+  DnsQuery in 'DnsQuery.pas',
+  EmulVT in 'EmulVT.pas',
+  FingCli in 'FingCli.pas',
+  FormPos in 'FormPos.pas',
+  FtpCli in 'FtpCli.pas',
+  FtpSrv in 'FtpSrv.pas',
+  FtpSrvC in 'FtpSrvC.pas',
+  FtpSrvT in 'FtpSrvT.pas',
+  HttpCCodzlib in 'HttpCCodzlib.pas',
+  HttpContCod in 'HttpContCod.pas',
+  HttpProt in 'HttpProt.pas',
+  HttpSrv in 'HttpSrv.pas',
+  Icmp in 'Icmp.pas',
+  IcsDES in 'IcsDES.pas',
+  IcsLogger in 'IcsLogger.pas',
+  IcsMD4 in 'IcsMD4.pas',
+  IcsMD5 in 'IcsMD5.pas',
+  IcsNtlmMsgs in 'IcsNtlmMsgs.pas',
+  IcsSha1 in 'IcsSha1.pas',
+  IcsStreams in 'IcsStreams.pas',
+  IcsUrl in 'IcsUrl.pas',
+  IcsZlibHigh in 'IcsZlibHigh.pas',
+  IcsZLibObj in 'IcsZLibObj.pas',
+  MbxFile in 'MbxFile.pas',
+  MimeDec in 'MimeDec.pas',
+  MimeUtil in 'MimeUtil.pas',
+  NntpCli in 'NntpCli.pas',
+  Ping in 'Ping.pas',
+  Pop3Prot in 'Pop3Prot.pas',
+  SmtpProt in 'SmtpProt.pas',
+  TnCnx in 'TnCnx.pas',
+  TnEmulVT in 'TnEmulVT.pas',
+  TnOptFrm in 'TnOptFrm.pas' {OptForm},
+  TnScript in 'TnScript.pas',
+  Wait in 'Wait.pas',
+  WSockBuf in 'WSockBuf.pas',
+  WSocket in 'wsocket.pas',
+  WSocketE in 'WSocketE.pas',
+  WSocketS in 'WSocketS.pas',
+  WSocketTS in 'WSocketTS.pas';
+
+end.

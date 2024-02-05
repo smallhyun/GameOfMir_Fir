@@ -1,0 +1,12 @@
+  TClientItem = record //OK
+    s: TStdItem;
+    MakeIndex: Integer;
+    Dura: Word;
+    DuraMax: Word;
+
+    Add_AC: Word;
+    Add_MAC: Word;
+    Add_DC: Word;
+    Add_MC: Word;
+    Add_SC: Word;
+  end;

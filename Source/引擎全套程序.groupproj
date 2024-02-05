@@ -1,0 +1,132 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{209211D1-668B-4D63-A2C5-67E591068349}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="DBServer\DBServer.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="GameCenter\GameCenter.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="LogDataServer\LogDataServer.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="LoginGate\LoginGate.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="LoginSrv\LoginSrv.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="M2Engine\M2Server.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="MirClient\MirClient.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="RunGate\RunGate.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="SelGate\SelGate.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="DBServer">
+        <MSBuild Projects="DBServer\DBServer.dproj"/>
+    </Target>
+    <Target Name="DBServer:Clean">
+        <MSBuild Projects="DBServer\DBServer.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="DBServer:Make">
+        <MSBuild Projects="DBServer\DBServer.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="GameCenter">
+        <MSBuild Projects="GameCenter\GameCenter.dproj"/>
+    </Target>
+    <Target Name="GameCenter:Clean">
+        <MSBuild Projects="GameCenter\GameCenter.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="GameCenter:Make">
+        <MSBuild Projects="GameCenter\GameCenter.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="LogDataServer">
+        <MSBuild Projects="LogDataServer\LogDataServer.dproj"/>
+    </Target>
+    <Target Name="LogDataServer:Clean">
+        <MSBuild Projects="LogDataServer\LogDataServer.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="LogDataServer:Make">
+        <MSBuild Projects="LogDataServer\LogDataServer.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="LoginGate">
+        <MSBuild Projects="LoginGate\LoginGate.dproj"/>
+    </Target>
+    <Target Name="LoginGate:Clean">
+        <MSBuild Projects="LoginGate\LoginGate.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="LoginGate:Make">
+        <MSBuild Projects="LoginGate\LoginGate.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="LoginSrv">
+        <MSBuild Projects="LoginSrv\LoginSrv.dproj"/>
+    </Target>
+    <Target Name="LoginSrv:Clean">
+        <MSBuild Projects="LoginSrv\LoginSrv.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="LoginSrv:Make">
+        <MSBuild Projects="LoginSrv\LoginSrv.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="M2Server">
+        <MSBuild Projects="M2Engine\M2Server.dproj"/>
+    </Target>
+    <Target Name="M2Server:Clean">
+        <MSBuild Projects="M2Engine\M2Server.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="M2Server:Make">
+        <MSBuild Projects="M2Engine\M2Server.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="MirClient">
+        <MSBuild Projects="MirClient\MirClient.dproj"/>
+    </Target>
+    <Target Name="MirClient:Clean">
+        <MSBuild Projects="MirClient\MirClient.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="MirClient:Make">
+        <MSBuild Projects="MirClient\MirClient.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="RunGate">
+        <MSBuild Projects="RunGate\RunGate.dproj"/>
+    </Target>
+    <Target Name="RunGate:Clean">
+        <MSBuild Projects="RunGate\RunGate.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="RunGate:Make">
+        <MSBuild Projects="RunGate\RunGate.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="SelGate">
+        <MSBuild Projects="SelGate\SelGate.dproj"/>
+    </Target>
+    <Target Name="SelGate:Clean">
+        <MSBuild Projects="SelGate\SelGate.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="SelGate:Make">
+        <MSBuild Projects="SelGate\SelGate.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="DBServer;GameCenter;LogDataServer;LoginGate;LoginSrv;M2Server;MirClient;RunGate;SelGate"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="DBServer:Clean;GameCenter:Clean;LogDataServer:Clean;LoginGate:Clean;LoginSrv:Clean;M2Server:Clean;MirClient:Clean;RunGate:Clean;SelGate:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="DBServer:Make;GameCenter:Make;LogDataServer:Make;LoginGate:Make;LoginSrv:Make;M2Server:Make;MirClient:Make;RunGate:Make;SelGate:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

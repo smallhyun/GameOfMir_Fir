@@ -1,0 +1,9 @@
+RM_LEVELUP
+SM_HEROLEVELUP
+
+  if BaseObject.m_btRaceServer = RC_PLAYOBJECT then begin
+    GetValValue(TPlayObject(BaseObject), QuestActionInfo.sParam2, nExp);
+  end else
+  if BaseObject.m_btRaceServer = RC_HEROOBJECT then begin
+    GetValValue(TPlayObject(BaseObject.m_Master), QuestActionInfo.sParam2, nExp);
+  end;

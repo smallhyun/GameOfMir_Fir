@@ -1,0 +1,49 @@
+object FrmLoadFromDB: TFrmLoadFromDB
+  Left = 924
+  Top = 562
+  BorderStyle = bsDialog
+  Caption = #25968#25454#23548#20837
+  ClientHeight = 92
+  ClientWidth = 381
+  Color = clBtnFace
+  Font.Charset = GB2312_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -12
+  Font.Name = #23435#20307
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 12
+  object RzLabel1: TRzLabel
+    Left = 104
+    Top = 24
+    Width = 54
+    Height = 12
+    Caption = #25968#25454#24211#21517':'
+    BlinkIntervalOff = 1
+    BlinkIntervalOn = 1
+  end
+  object DialogButtons: TRzDialogButtons
+    Left = 0
+    Top = 56
+    Width = 381
+    ButtonColor = 15791348
+    ButtonFrameColor = 7617536
+    CaptionOk = #30830#23450
+    CaptionCancel = #21462#28040
+    CaptionHelp = '&Help'
+    HotTrack = True
+    ModalResultOk = 6
+    ModalResultCancel = 2
+    ModalResultHelp = 0
+    TabOrder = 0
+  end
+  object EditDBName: TRzEdit
+    Left = 160
+    Top = 24
+    Width = 121
+    Height = 20
+    Text = 'HeroDB'
+    TabOrder = 1
+  end
+end

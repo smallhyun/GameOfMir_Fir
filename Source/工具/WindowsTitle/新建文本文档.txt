@@ -1,0 +1,14 @@
+窗口标题检测地址 进程检测地址|窗口标题检测地址
+Http://www.cqfir.com/CheckProcesses.txt|Http://www.cqfir.com/Checktitlename.txt
+
+Checktitlename.txt文件格式
+
+窗口标题/检测名称1/检测名称2/检测名称3/检测名称4/检测名称5。。。。。。。。。
+
+窗口标题和检测名称是使用 WindowsTitle.exe 查找
+
+窗口标题如果是*号表示不检测窗口标题，只检测检测名称
+
+检测名称可能是子窗口名称或某个按钮名称或标签名称等等
+
+WindowsTitle.exe 使用说明-先点击开始，然后鼠标点一下需要封杀的外挂就可以

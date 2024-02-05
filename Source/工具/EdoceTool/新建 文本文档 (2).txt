@@ -1,0 +1,81 @@
+procedure TForm1.btnTestStrClick(Sender: TObject); 
+var 
+Temp: String; 
+Encryptor: TDesEncryptor; 
+L: Integer; 
+Printable: String; 
+begin 
+Encryptor := TDesEncryptor.Create; 
+try 
+Encryptor.SetKey(edtKey.Text); 
+Temp := edtPlain.Text; 
+//加密 
+L := Length(Temp); 
+SetLength(Temp, Encryptor.GetMaxEncodeSize(Length(Temp))); 
+L := Encryptor.EncodeMem(Temp[1], L); 
+SetLength(Temp, L); 
+//显示密文（因为密文不是ASCII码，要转换一下才能显示） 
+SetLength(Printable, L *2); 
+BinToHex(PChar(Temp), PChar(Printable), L); 
+edtCipher.Text := Printable; 
+//解密 
+L := Length(Temp); 
+SetLength(Temp, Encryptor.GetMaxDecodeSize(L)); 
+L := Encryptor.DecodeMem(Temp[1], L); 
+SetLength(Temp, L); 
+edtDecrypted.Text := Temp; 
+finally 
+Encryptor.Free; 
+end; 
+end; 
+
+procedure TForm1.btnDecryptFileClick(Sender: TObject); 
+var 
+InStrm, OutStrm: TStream; 
+Encryptor: TDesEncryptor; 
+begin 
+InStrm := nil; 
+OutStrm := nil; 
+Encryptor := nil; 
+try 
+if dlgOpen.Execute and dlgSave.Execute then 
+begin 
+InStrm :=TFileStream.Create(dlgOpen.FileName, fmOpenRead); 
+OutStrm := TFileStream.Create(dlgSave.FileName,fmCreate); 
+Encryptor := TDesEncryptor.Create; 
+Encryptor.SetKey(edtKey.Text); 
+Encryptor.Decode(InStrm, OutStrm); 
+end; 
+finally 
+InStrm.Free; 
+OutStrm.Free; 
+Encryptor.Free; 
+end; 
+end; 
+
+procedure TForm1.btnEncryptFileClick(Sender: TObject); 
+var 
+InStrm, OutStrm: TStream; 
+Encryptor: TDesEncryptor; 
+begin 
+InStrm := nil; 
+OutStrm := nil; 
+Encryptor := nil; 
+try 
+if dlgOpen.Execute and dlgSave.Execute then 
+begin 
+InStrm :=TFileStream.Create(dlgOpen.FileName, fmOpenRead); 
+OutStrm := TFileStream.Create(dlgSave.FileName,fmCreate); 
+Encryptor := TDesEncryptor.Create; 
+Encryptor.SetKey(edtKey.Text); 
+Encryptor.Encode(InStrm, OutStrm); 
+end; 
+finally 
+InStrm.Free; 
+OutStrm.Free; 
+Encryptor.Free; 
+end; 
+end; 
+
+end. 
+

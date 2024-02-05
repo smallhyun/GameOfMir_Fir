@@ -1,0 +1,51 @@
+object frmNPCDialog: TfrmNPCDialog
+  Left = 705
+  Top = 352
+  BorderStyle = bsDialog
+  ClientHeight = 152
+  ClientWidth = 405
+  Color = clGray
+  Font.Charset = GB2312_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -12
+  Font.Name = #23435#20307
+  Font.Style = []
+  FormStyle = fsStayOnTop
+  OldCreateOrder = False
+  Position = poMainFormCenter
+  PixelsPerInch = 96
+  TextHeight = 12
+  object LabelMsg: TRzLabel
+    Left = 24
+    Top = 56
+    Width = 6
+    Height = 12
+  end
+  object DialogButtons: TRzDialogButtons
+    Left = 0
+    Top = 116
+    Width = 405
+    ButtonColor = clGray
+    CaptionOk = #30830#23450
+    CaptionCancel = #21462#28040
+    CaptionHelp = '&Help'
+    HotTrack = True
+    ModalResultOk = 1
+    ModalResultCancel = 2
+    ModalResultHelp = 0
+    ShowOKButton = False
+    ShowCancelButton = False
+    OnClickOk = DialogButtonsClickOk
+    OnClickCancel = DialogButtonsClickCancel
+    Color = clGray
+    TabOrder = 0
+  end
+  object EditText: TRzEdit
+    Left = 104
+    Top = 56
+    Width = 257
+    Height = 20
+    TabOrder = 1
+    Visible = False
+  end
+end

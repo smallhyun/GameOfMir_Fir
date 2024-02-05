@@ -1,0 +1,4 @@
+jcl 和 jvcl太大了 下面是地址 自己下载 其他全是delphi XE10.4的
+
+https://github.com/project-jedi/jcl.git
+https://github.com/project-jedi/jvcl.git

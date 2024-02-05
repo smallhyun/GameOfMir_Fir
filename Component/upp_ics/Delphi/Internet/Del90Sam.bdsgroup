@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<PersonalityInfo>
+		<Option>
+			<Option Name="Personality" Type="String">Default.Personality</Option>
+			<Option Name="ProjectType" Type="String"></Option>
+			<Option Name="Version" Type="String">1.0</Option>
+			<Option Name="GUID" Type="String">{7D9A481A-D16C-46C9-8AAD-9A0A3CBE917E}</Option>
+		</Option>
+	</PersonalityInfo>
+	<Default.Personality>  <Projects>
+      <Projects Name="IcsDel90.bpl">..\Vc32\IcsDel90.bdsproj</Projects>
+      <Projects Name="BasFtp.exe">BasFtp.bdsproj</Projects>
+      <Projects Name="clidemo.exe">CliDemo.bdsproj</Projects>
+      <Projects Name="client5.exe">Client5.bdsproj</Projects>
+      <Projects Name="Client7.exe">Client7.bdsproj</Projects>
+      <Projects Name="ConCli1.exe">ConCli1.bdsproj</Projects>
+      <Projects Name="ConCli2.exe">ConCli2.bdsproj</Projects>
+      <Projects Name="ConFtp.exe">ConFtp.bdsproj</Projects>
+      <Projects Name="ConHttp.exe">ConHttp.bdsproj</Projects>
+      <Projects Name="ConPing.exe">ConPing.bdsproj</Projects>
+      <Projects Name="conpop3.exe">ConPop3.bdsproj</Projects>
+      <Projects Name="ConSmtp.exe">ConSmtp.bdsproj</Projects>
+      <Projects Name="ConSrv1.exe">ConSrv1.bdsproj</Projects>
+      <Projects Name="ConUdpLstn.exe">ConUdpLstn.bdsproj</Projects>
+      <Projects Name="DllTst1.exe">DllTst1.bdsproj</Projects>
+      <Projects Name="dnslook.exe">DnsLook.bdsproj</Projects>
+      <Projects Name="DnsResolver.exe">DnsResolver.bdsproj</Projects>
+      <Projects Name="DynCli.exe">DynCli.bdsproj</Projects>
+      <Projects Name="finger.exe">Finger.bdsproj</Projects>
+      <Projects Name="FtpAsy.exe">FtpAsy.bdsproj</Projects>
+      <Projects Name="ftpServ.exe">FtpServ.bdsproj</Projects>
+      <Projects Name="ftpthrd.exe">FtpThrd.bdsproj</Projects>
+      <Projects Name="ftptst.exe">FtpTst.bdsproj</Projects>
+      <Projects Name="httpasp.exe">HttpAsp.bdsproj</Projects>
+      <Projects Name="httpasy.exe">HttpAsy.bdsproj</Projects>
+      <Projects Name="httpChk.exe">HttpChk.bdsproj</Projects>
+      <Projects Name="Httpdmo.exe">HttpDmo.bdsproj</Projects>
+      <Projects Name="httpget.exe">HttpGet.bdsproj</Projects>
+      <Projects Name="httppg.exe">HttpPg.bdsproj</Projects>
+      <Projects Name="HttpPost.exe">HttpPost.bdsproj</Projects>
+      <Projects Name="httpthrd.exe">HttpThrd.bdsproj</Projects>
+      <Projects Name="HttpTst.exe">HttpTst.bdsproj</Projects>
+      <Projects Name="IcsDll1.dll">IcsDll1.bdsproj</Projects>
+      <Projects Name="IcsDll2.dll">IcsDll2.bdsproj</Projects>
+      <Projects Name="IcsIsapi.dll">IcsIsapi.bdsproj</Projects>
+      <Projects Name="MailHtml.exe">MailHtml.bdsproj</Projects>
+      <Projects Name="MailRcv.exe">MailRcv.bdsproj</Projects>
+      <Projects Name="MailSnd.exe">MailSnd.bdsproj</Projects>
+      <Projects Name="MailSndAsync.exe">MailSndAsync.bdsproj</Projects>
+      <Projects Name="MD5File.exe">MD5File.bdsproj</Projects>
+      <Projects Name="md5test.exe">MD5Test.bdsproj</Projects>
+      <Projects Name="MimeDemo.exe">MimeDemo.bdsproj</Projects>
+      <Projects Name="MimeTst.exe">MimeTst.bdsproj</Projects>
+      <Projects Name="mtsrv.exe">MtSrv.bdsproj</Projects>
+      <Projects Name="NewsHtml.exe">NewsHtml.bdsproj</Projects>
+      <Projects Name="newsrdr.exe">NewsRdr.bdsproj</Projects>
+      <Projects Name="NsLookup.exe">NsLookup.bdsproj</Projects>
+      <Projects Name="pingtst.exe">PingTst.bdsproj</Projects>
+      <Projects Name="Pop3Mime.exe">Pop3Mime.bdsproj</Projects>
+      <Projects Name="Recv.exe">Recv.bdsproj</Projects>
+      <Projects Name="Sender.exe">Sender.bdsproj</Projects>
+      <Projects Name="server5.exe">Server5.bdsproj</Projects>
+      <Projects Name="ShaTest.exe">ShaTest.bdsproj</Projects>
+      <Projects Name="SocksTst.exe">SocksTst.bdsproj</Projects>
+      <Projects Name="srvdemo.exe">SrvDemo.bdsproj</Projects>
+      <Projects Name="SrvTcp.exe">SrvTcp.bdsproj</Projects>
+      <Projects Name="SvcTcp.exe">SvcTcp.bdsproj</Projects>
+      <Projects Name="TcpSrv.exe">TcpSrv.bdsproj</Projects>
+      <Projects Name="ThrdSrv.exe">ThrdSrv.bdsproj</Projects>
+      <Projects Name="tnclient.exe">TnClient.bdsproj</Projects>
+      <Projects Name="tndemo.exe">TnDemo.bdsproj</Projects>
+      <Projects Name="tnsrv.exe">TnSrv.bdsproj</Projects>
+      <Projects Name="twschat.exe">TWSChat.bdsproj</Projects>
+      <Projects Name="udplstn.exe">UdpLstn.bdsproj</Projects>
+      <Projects Name="udpsend.exe">UdpSend.bdsproj</Projects>
+      <Projects Name="WebServ.exe">WebServ.bdsproj</Projects>
+      <Projects Name="FtpMulti.exe">FtpMulti.bdsproj</Projects>
+      <Projects Name="Targets">IcsDel90.bpl BasFtp.exe clidemo.exe client5.exe Client7.exe ConCli1.exe ConCli2.exe ConFtp.exe ConHttp.exe ConPing.exe conpop3.exe ConSmtp.exe ConSrv1.exe ConUdpLstn.exe DllTst1.exe dnslook.exe DnsResolver.exe DynCli.exe finger.exe FtpAsy.exe ftpServ.exe ftpthrd.exe ftptst.exe httpasp.exe httpasy.exe httpChk.exe Httpdmo.exe httpget.exe httppg.exe HttpPost.exe httpthrd.exe HttpTst.exe IcsDll1.dll IcsDll2.dll IcsIsapi.dll MailHtml.exe MailRcv.exe MailSnd.exe MailSndAsync.exe MD5File.exe md5test.exe MimeDemo.exe MimeTst.exe mtsrv.exe NewsHtml.exe newsrdr.exe NsLookup.exe pingtst.exe Pop3Mime.exe Recv.exe Sender.exe server5.exe ShaTest.exe SocksTst.exe srvdemo.exe SrvTcp.exe SvcTcp.exe TcpSrv.exe ThrdSrv.exe tnclient.exe tndemo.exe tnsrv.exe twschat.exe udplstn.exe udpsend.exe WebServ.exe FtpMulti.exe</Projects>
+    </Projects>
+    <Dependencies/>
+  </Default.Personality>
+</BorlandProject>

@@ -1,0 +1,65 @@
+CHANGEITEMNEWADDVALUE (1~17) 调整符(+-=) 数值 装备位置(为空时调整的是OK框中的装备,0-12调整身上装备)
+CHECKITEMNEWADDVALUECOUNT (1~17) 检测符(<=>) 数值 装备位置(为空时检测的是OK框中的装备,0-12检测身上装备)
+
+;检测装备持久
+CHECKITEMDURA 检测符(<=>) 数值 装备位置(为空时检测的是OK框中的装备,0-12检测身上装备)
+
+;指定范围内触发
+RangeGoto 范围 触发字段 排除死亡人物(0=不排除,1=排除)
+
+复活触发
+[@Revival]
+
+跑步触发
+[@Run]
+
+走路触发
+[@Walk]
+
+骑马跑步触发
+[@HorseRun]
+
+
+功能: 创建小组时触发. 
+说明: 队员的名字放在队长S0变量中.
+[@GroupCreate]
+#IF
+#ACT
+SendMsg 5 <$STR(S0)>加入了组队.
+<$STR(S0)>.SendMsg 5 你加入了组队.
+
+;在组队前触发
+[@StartGroup]
+#IF
+CheckLevelEx < 25
+#ACT
+CreateGroupFail
+SendMsg 5 25级之后才可以组队.
+
+功能: 离开队伍时触发. 
+说明: 被删除的队员名字放在队长的S0变量中.
+[@LeaveGroup]
+#IF
+#ACT
+SendMsg 5 你退出了组队.
+
+功能: 删除小组成员时触发. 
+说明: 被删除的队员名字放在队长的S0变量中.
+[@GroupDelMember]
+#IF
+#ACT
+<$STR(S0)>.SendMsg 5 你被队长踢出了组队!
+
+功能: 添加小组成员时触发. 
+说明: 队员名字放在队长的S0变量中.
+[@GroupAddMember]
+#IF
+#ACT
+SendMsg 5 <$STR(S0)>加入了队伍.
+<$STR(S0)>.SendMsg 5 你加入了队伍.
+
+功能: 组队杀死怪物时触发. 
+[@GroupKillMon]
+#IF
+#ACT
+SendMsg 5 组队杀怪.

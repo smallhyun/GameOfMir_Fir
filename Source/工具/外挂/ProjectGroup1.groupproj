@@ -1,0 +1,44 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{21223cef-aa5a-4dd7-824f-d328a63d52a5}</ProjectGuid>
+  </PropertyGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Projects Include="..\..\Component\HeroBrowser\Components\EmbeddedWB_D2005\EmbeddedWeBrowserD2005.bdsproj" />
+    <Projects Include="CqFirSupPort.bdsproj" />
+  </ItemGroup>
+  <ProjectExtensions>
+    <Borland.Personality>Default.Personality</Borland.Personality>
+    <Borland.ProjectType />
+    <BorlandProject>
+  <BorlandProject xmlns=""> <Default.Personality> </Default.Personality> </BorlandProject></BorlandProject>
+  </ProjectExtensions>
+  <Target Name="CqFirSupPort">
+    <MSBuild Projects="CqFirSupPort.bdsproj" Targets="" />
+  </Target>
+  <Target Name="CqFirSupPort:Clean">
+    <MSBuild Projects="CqFirSupPort.bdsproj" Targets="Clean" />
+  </Target>
+  <Target Name="CqFirSupPort:Make">
+    <MSBuild Projects="CqFirSupPort.bdsproj" Targets="Make" />
+  </Target>
+  <Target Name="EmbeddedWeBrowserD2005">
+    <MSBuild Projects="..\..\Component\HeroBrowser\Components\EmbeddedWB_D2005\EmbeddedWeBrowserD2005.bdsproj" Targets="" />
+  </Target>
+  <Target Name="EmbeddedWeBrowserD2005:Clean">
+    <MSBuild Projects="..\..\Component\HeroBrowser\Components\EmbeddedWB_D2005\EmbeddedWeBrowserD2005.bdsproj" Targets="Clean" />
+  </Target>
+  <Target Name="EmbeddedWeBrowserD2005:Make">
+    <MSBuild Projects="..\..\Component\HeroBrowser\Components\EmbeddedWB_D2005\EmbeddedWeBrowserD2005.bdsproj" Targets="Make" />
+  </Target>
+  <Target Name="Build">
+    <CallTarget Targets="CqFirSupPort;EmbeddedWeBrowserD2005" />
+  </Target>
+  <Target Name="Clean">
+    <CallTarget Targets="CqFirSupPort:Clean;EmbeddedWeBrowserD2005:Clean" />
+  </Target>
+  <Target Name="Make">
+    <CallTarget Targets="CqFirSupPort:Make;EmbeddedWeBrowserD2005:Make" />
+  </Target>
+  <Import Condition="Exists('$(MSBuildBinPath)\Borland.Group.Targets')" Project="$(MSBuildBinPath)\Borland.Group.Targets" />
+</Project>
