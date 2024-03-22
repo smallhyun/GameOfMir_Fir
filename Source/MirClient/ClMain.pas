@@ -9,7 +9,7 @@ uses
   DWinCtl, ClFunc, magiceff, SoundUtil, clEvent, Wave, IniFiles, Registry,
   Spin, ComCtrls, Grids, Menus, Mask, MShare, Share, StrUtils, HTTPGet, MD5EncodeStr,
   SoundEngn, ShellApi, tlHelp32, psAPI, PlugIn, GameImages,
-  PathFind, zLibx, MPlayer, OleCtrls, GuaJi, JSocket;
+  PathFind, zLibx, MPlayer, OleCtrls, GuaJi;
 
 const
   BO_FOR_TEST = False;
@@ -53,11 +53,15 @@ type
     SelChrWaitTimer: TTimer;
     CmdTimer: TTimer;
     MinTimer: TTimer;
+    DXDraw: TDXDraw;
+    HTTPGetString: THTTPGet;
     PopupMenu1: TPopupMenu;
     SpeedHackTimer: TTimer;
+    HTTPGetCheckPro: THTTPGet;
     FindPathTimer: TTimer;
 
     TimerPlayMedia: TTimer;
+    HTTPGetTitleList: THTTPGet;
     TimerShowDlg: TTimer;
     procedure DXDrawInitialize(Sender: TObject);
     procedure FormCreate(Sender: TObject);
